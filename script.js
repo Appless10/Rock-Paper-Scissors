@@ -53,30 +53,6 @@ function playGame(){
     console.log("Computer chose: " + computerSelection);
     playRound(humanSelection, computerSelection);
 
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();  
-    console.log("Player chose: " + humanSelection);
-    console.log("Computer chose: " + computerSelection);
-    playRound(humanSelection, computerSelection);
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();  
-    console.log("Player chose: " + humanSelection);
-    console.log("Computer chose: " + computerSelection);
-    playRound(humanSelection, computerSelection);
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();  
-    console.log("Player chose: " + humanSelection);
-    console.log("Computer chose: " + computerSelection);
-    playRound(humanSelection, computerSelection);
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice(); 
-    console.log("Player chose: " + humanSelection);
-    console.log("Computer chose: " + computerSelection);
-    playRound(humanSelection, computerSelection);
-
     console.log("Computer ended with " + computerScore + " points");
     console.log("Human ended with " + humanScore + " points");
 
@@ -90,3 +66,4 @@ function playGame(){
 }
 
 playGame();
+
