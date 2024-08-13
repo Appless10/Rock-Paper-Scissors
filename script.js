@@ -21,8 +21,10 @@ function playGame(){
             return "scissors";
         }
     }
+
+    let computerSelection = getComputerChoice(); 
     
-    function getHumanChoice(){
+    
 
         //let humnChoice = prompt("Enter either \'Rock\', \'Paper\', or \'Scissors\': ");
 
@@ -30,16 +32,19 @@ function playGame(){
         rock.addEventListener("click", () => {
              humnChoice = "Rock";
              //change to call function inside function
+             playRound(humnChoice, computerSelection);
         });
 
         paper.addEventListener("click", () => {
              humnChoice = "Paper";
+             playRound(humnChoice, computerSelection);
         });
 
         scissors.addEventListener("click", () => {
              humnChoice = "Scissors";
+             playRound(humnChoice, computerSelection);
         });
-    }
+    
 
 
     function playRound(humanChoice, computerChoice){
@@ -67,17 +72,9 @@ function playGame(){
         }
     }
 
-
-
     
-    let computerSelection = getComputerChoice(); 
-
-
-    
-     console.log("Player chose: " + humanSelection);
+     console.log("Player chose: " + humnChoice);
      console.log("Computer chose: " + computerSelection);
-     playRound(humanSelection, computerSelection);
-    
     
 
     console.log("Computer ended with " + computerScore + " points");
