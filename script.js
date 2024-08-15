@@ -9,16 +9,6 @@ function playGame(){
     let computerScore = 0;
     let humanScore = 0;
 
-
-
-    // Have to call getComputerChoice each time button is clicked
-
-    
-    
-
-        //let humnChoice = prompt("Enter either \'Rock\', \'Paper\', or \'Scissors\': ");
-
-        
         rock.addEventListener("click", () => {
              humnChoice = "Rock";
              //change to call function inside function
@@ -118,8 +108,6 @@ function playGame(){
      }
      }
     }
-
-
 }
 
 
